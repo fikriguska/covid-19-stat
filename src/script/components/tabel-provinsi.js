@@ -12,7 +12,7 @@ class tabelProvinsi extends HTMLElement{
                         <thead>
                           <tr>
                             <th scope="col" class="bg-dark text-white">Provinsi</th>
-                            <th scope="col" class="bg-warning text-white">Positif</th>
+                            <th scope="col" class="bg-warning text-white">Terinfeksi</th>
                             <th scope="col" class="bg-danger text-white">Meninggal</th>
                             <th scope="col" class="bg-success text-white">Sembuh</th>
                           </tr>
