@@ -4,7 +4,7 @@ class pilihNegara extends HTMLElement {
         this.render();
     }
 
-    render(value="IDN"){
+    render(value="Indonesia"){
 
         fetch('https://covid19.mathdro.id/api/countries/')
             .then(response => response.json())
@@ -18,7 +18,7 @@ class pilihNegara extends HTMLElement {
                             <select id = 'inputFieldsOptions' class = 'text-center' onChange = 'document.querySelector("pilih-negara").render(this.value)');">
                     `
                 countries.forEach(country => {
-                    html += `<option value = "${country.iso3}" ${(country.iso3==value)?"selected":""}> ${country.name} </option>`
+                    html += `<option value = "${country.name}" ${(country.name==value)?"selected":""}> ${country.name} </option>`
                 });
 
                 html += `

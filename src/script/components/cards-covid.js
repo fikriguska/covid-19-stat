@@ -65,7 +65,7 @@ class cardsCovid extends HTMLElement {
                         </div>
                     </div>
                     <div class="col text-center text-dark mt-2">
-                        pembaruan terakhir: ${update}
+                        pembaharuan terakhir: ${update}
                     </div>
                 </div>
                 
