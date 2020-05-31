@@ -7,8 +7,8 @@ class tabelProvinsi extends HTMLElement{
 
                 let html = `
                   <div class="row">
-                    <div class="col overflow-auto">
-                      <table class="table text-center mt-3 class="overflow-hidden">
+                    <div class="col overflow-auto p-0">
+                      <table class="table text-center mt-3">
                         <thead>
                           <tr>
                             <th scope="col" class="bg-dark text-white">Provinsi</th>
