@@ -38,7 +38,7 @@ class cardsCovid extends HTMLElement {
                     <div class="col-md-4 my-1">
                         <div class="card border-0 bg-warning">
                             <div class="card-body">
-                              <h5 class="card-title text-center">Positif</h5>
+                              <h5 class="card-title text-center">Terinfeksi</h5>
                               <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                               <p class="card-text text-center display-number">${separator(country.confirmed.value)}</p>
                             </div>
