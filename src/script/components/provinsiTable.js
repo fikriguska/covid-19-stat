@@ -4,9 +4,9 @@ class provinsiTable extends HTMLElement{
         fetch('https://indonesia-covid-19.mathdro.id/api/provinsi')
             .then(response => response.json())
             .then(provinsi => {
-                console.log(provinsi);
+
                 let html = `
-                    <table class="table text-center">
+                    <table class="table text-center mt-3">
                       <thead>
                         <tr>
                           <th scope="col" class="bg-dark text-white">Provinsi</th>
@@ -17,6 +17,10 @@ class provinsiTable extends HTMLElement{
                       </thead>`;
 
                 provinsi.data.forEach(prov => {
+
+                    if(prov.provinsi == "Indonesia"){
+                        prov.provinsi = "Tidak Diketahui";
+                    }
 
                     html += `
                               <tbody>
