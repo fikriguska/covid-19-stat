@@ -16,9 +16,9 @@ class pilihNegara extends HTMLElement {
                     <div class="row">
                         <div class="col text-center">
                             <select id = 'inputFieldsOptions' class = 'text-center' onChange = 'document.querySelector("pilih-negara").render(this.value)');">
-                    `
+                    `;
                 countries.forEach(country => {
-                    html += `<option value = "${country.name}" ${(country.name==value)?"selected":""}> ${country.name} </option>`
+                    html += `<option value = "${country.name}" ${(country.name==value)?"selected":""}> ${country.name} </option>`;
                 });
 
                 html += `
@@ -33,10 +33,8 @@ class pilihNegara extends HTMLElement {
 
                 const cardsCovidPilih = document.querySelector('cards-covid.pilih');
                 cardsCovidPilih.country = value;
-                
 
-
-            })
+            });
         
 
 

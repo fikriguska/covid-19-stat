@@ -41,7 +41,7 @@ class cardsCovid extends HTMLElement {
                         Data negara tidak ditemukan
                         </div>
                     </div>
-                `
+                `;
             }
             else{
                 this.innerHTML = `
