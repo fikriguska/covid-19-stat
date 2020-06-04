@@ -25,6 +25,7 @@ class cardsCovid extends HTMLElement {
             const timezone = getTimezone(data) === '+0700' ? 'WIB' : getTimezone(data);
             return getDate(data) + ' | ' + getTime(data) + ' ' + timezone;
         };
+        
         function separator(num){
             return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }

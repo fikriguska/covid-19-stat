@@ -1,6 +1,10 @@
 class tabelProvinsi extends HTMLElement{
 
     render(){
+        function separator(num){
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        
         fetch('https://indonesia-covid-19.mathdro.id/api/provinsi')
             .then(response => response.json())
             .then(provinsi => {
@@ -28,9 +32,9 @@ class tabelProvinsi extends HTMLElement{
                               <tbody>
                               <tr>
                                 <th scope="row" class="text-left">${prov.provinsi}</th>
-                                <td>${prov.kasusPosi}</td>
-                                <td>${prov.kasusMeni}</td>
-                                <td>${prov.kasusSemb}</td>
+                                <td>${separator(prov.kasusPosi)}</td>
+                                <td>${separator(prov.kasusMeni)}</td>
+                                <td>${separator(prov.kasusSemb)}</td>
                               </tr>`;
                 });
 
