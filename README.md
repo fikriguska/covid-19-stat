@@ -30,3 +30,6 @@ the output documents located in dist/ folder.
 
 ## Contributing
 Pull requests are welcome. 
+
+## Data Resource
+[mathdroid/covid19-api](https://github.com/mathdroid/covid-19-api)
